@@ -1,0 +1,19 @@
+@model GameInput
+
+<h1>Predict Game Outcome</h1>
+
+@using (Html.BeginForm("Predict", "Home", FormMethod.Post)) {
+  <div>
+    @Html.LabelFor(model => model.HomeTeamName)
+    @Html.TextBoxFor(model => model.HomeTeamName)
+    @Html.ValidationMessageFor(model => model.HomeTeamName)
+  </div>
+  <div>
+    @Html.LabelFor(model => model.VisitorTeamName)
+    @Html.TextBoxFor(model => model.VisitorTeamName)
+    @Html.ValidationMessageFor(model => model.VisitorTeamName)
+  </div>
+  <div>
+    <button type="submit">Predict</button>
+  </div>
+}

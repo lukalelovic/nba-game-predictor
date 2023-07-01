@@ -1,6 +1,6 @@
 using Microsoft.ML.Data;
 
-public class GameData {
+public class Game {
   [LoadColumn(0)]
   public string? GAME_DATE_EST;
 

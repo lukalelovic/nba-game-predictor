@@ -6,10 +6,18 @@
     <RootNamespace>nba_game_predictor</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
   </PropertyGroup>
 
   <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.8" />
     <PackageReference Include="Microsoft.ML" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="src\views\**\*.cshtml" CopyToOutputDirectory="PreserveNewest" />
+    <None Remove="src\views\**\*.cshtml" />
   </ItemGroup>
 
 </Project>

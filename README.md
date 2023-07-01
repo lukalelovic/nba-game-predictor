@@ -22,4 +22,8 @@ Input two NBA basketball teams to get a predicted winner from the following list
 
 (Project is for learning purposes)
 
-### CSV training data modified from: https://www.kaggle.com/datasets/nathanlauga/nba-games
+CSV training data modified from: https://www.kaggle.com/datasets/nathanlauga/nba-games
+
+## To Run:
+
+```dotnet run``` via the command line to run .NET server on port 5000
